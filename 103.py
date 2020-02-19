@@ -21,12 +21,18 @@ print('\n String na formatação solicitada fica: \" {0}{1} \" \n'.format(titulo
 # Palindrome perfeito sao palavras que ao serem escritas em ordem reversa,
 # resultam na mesma palavra.
 # Ignore espacos e caixa alta
+palindrome_generico = str(input('Digite uma palavra: ')).lower().replace(' ', '')
 
 palindrome_one = 'ovo'.lower().replace(' ', '')
 palindrome_two = 'Natan'.lower().replace(' ', '')
 palindrome_three = 'luz azul'.lower().replace(' ', '')
 palindrome_four = 'caneta azul'.lower().replace(' ', '')
 
+
+if (palindrome_generico == palindrome_generico[::-1]):
+	print('{} é um Palindrome perfeito'.format(palindrome_generico))	
+else:
+	print('{} não é um palindrome perfeito'.format(palindrome_generico))
 
 if (palindrome_one == palindrome_one[::-1]):
 	print('{} é um Palindrome perfeito'.format(palindrome_one))	
