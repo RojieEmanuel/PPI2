@@ -5,7 +5,7 @@ professor2 = {'id': 37, 'name': 'Denilson Barbosa', 'age': 40, 'state_origin': '
 professor3 = dict(id=28, name='Jorge Armino', idade=37)
 
 # 1) Imprima os metodos disponiveis para uma lista e para uma tupla
-# 2) Faca um metodo para retornar apenas as diferencas entre as duas de metodos
+
 a = dir(list)
 print('=========================================== MÉTODOS DE LISTA =======================================', '\n')
 print(a)
@@ -16,69 +16,15 @@ print('=========================================== MÉTODOS DE TUPLA ===========
 print(a)
 print('=========================================== FIM ====================================================', '\n')
 
-# lista
-list = [2, 3, 5, 7, 11, 13, 17, 19]
-# tupla
-tuple = (2, 3, 5, 7, 11, 13, 17, 19)
+# 2) Faca um metodo para retornar apenas as diferencas entre as duas de metodos
+def Diferenca(listaA, listaB):
+    print("Métodos de list: ", set(listaA) - set(listaB))
+    print('\n\n')
+    print("Métodos de tuple: ", set(listaB) - set(listaA))
+    print('\n\n')
 
 
-
-print("=========================================== LISTA ==================================================", '\n')
-print("Lista:", list)
-
-print("Inserindo elemento no final da Lista:", '\n')
-list.append(22)
-print(list)
-
-print("Concatenando Listas:", '\n')
-list.extend(list)
-print(list)
-
-print("Inserindo elementos em determinada posição:", '\n')
-list.insert(0, 0)
-print(list)
-
-print("Removendo elementos:", '\n')
-list.remove(0)
-print(list)
-
-
-print("Remove o item que está no indice passado:", '\n')
-list.pop()
-print(list)
-
-
-print("Descobrindo o índice do número 7 na Lista:", '\n')
-print(list.index(7))
-
-print("contando quantas vezes o número 2 aparece na Lista:", '\n')
-print(list.count(2))
-
-print("Invertendo lista:", '\n')
-list.reverse()
-print(list)
-
-print("Ordenando elementos:")
-list.sort()
-print(list)
-
-print("========================================== TUPLA ==================================================", '\n')
-print("Tupla:", tuple)
-
-
-print("Tuplas são imutáveis em sua maioria, com raras exceções, por isso todos os métodos que existem na lista de manipulação, não podem ser utilizados nas tuplas.", '\n')
-
-# tuple.append(22)
-# tuple.extend(tuple)
-# tuple.insert(0, 0)
-# tuple.remove(0)
-# tuple.pop()
-print("Descobrindo o índice do número 7 na Tupla:", '\n')
-print(tuple.index(7))
-
-print("contando quantas vezes o número 2 aparece na Tupla:", '\n')
-print(tuple.count(2))
-
+Diferenca(a, b)
 
 
 
