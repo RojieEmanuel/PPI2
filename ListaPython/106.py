@@ -1,17 +1,10 @@
 import csv
 
-
+# 1) Implemente o metodo define_default_city de acordo com a docstring definida no inicio da funcao. Utilize a
+# clausula else no loop implementado.
 professor1 = {'id': 42, 'name': 'Alexandre Abreu', 'age': 30, 'state_origin': 'Santa Catarina',
               'courses': ['Inteligência Artificial', 'Mineração de Dados', 'Programação para Internet I',
                           'Programação para Internet II']}
-
-###
-## Exercicios
-###
-
-# 1) Implemente o metodo define_default_city de acordo com a docstring definida no inicio da funcao. Utilize a
-# clausula else no loop implementado.
-
 
 def define_default_city(state):
     """ Define a capital do estado de origem como city_origin para um professor existente no arquivo.
@@ -34,8 +27,6 @@ if define_default_city(professor1['state_origin']):
 
 # 2) Remova do arquivo capitais-BR.csv todas capitais dos estados do sudeste e teste se sua funcao estah robusta o
 # suficiente.
-
-# Funcionou como esperado
 
 # 3) Faca uma funcao que le o arquivo lista-cpf.txt, retorne a quantidade de CPF unicos (sem repeticao) e os escreva
 # em um arquivo lista-cpf-unicos.txt. Eh necessario descompactar o arquivo lista-cpf.txt.tar.gz primeiro.
