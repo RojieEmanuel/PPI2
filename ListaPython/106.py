@@ -32,7 +32,7 @@ if define_default_city(professor1['state_origin']):
 # em um arquivo lista-cpf-unicos.txt. Eh necessario descompactar o arquivo lista-cpf.txt.tar.gz primeiro.
 
 
-def leitor_cpfs():
+def leCPF():
     set_cpfs = set()
     with open('lista-cpf.txt','r') as arquivo_cpfs:
         with open('lista-cpf-unicos.txt', 'w') as arquivo_cpfs_unicos:
@@ -43,4 +43,4 @@ def leitor_cpfs():
     return len(set_cpfs)
 
 
-print(leitor_cpfs())
+print(leCPF())
